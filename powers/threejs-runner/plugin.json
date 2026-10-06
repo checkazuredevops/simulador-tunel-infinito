@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "threejs-runner",
+  "version": "1.0.0",
+  "description": "Power para construir juegos endless runner con Three.js: túnel procedural, reciclaje de segmentos, colisiones por bounding box y HUD reactivo con Vue.",
+  "author": {
+    "name": "Simulador Kiro"
+  },
+  "keywords": [
+    "threejs",
+    "endless-runner",
+    "tunnel",
+    "game",
+    "procedural",
+    "low-poly",
+    "webgl"
+  ]
+}

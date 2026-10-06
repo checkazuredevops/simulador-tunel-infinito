@@ -1,0 +1,14 @@
+﻿{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Build check core",
+      "trigger": "PostFileSave",
+      "matcher": "src/game/(Game|TunnelManager|ObstacleManager|Player)\\.js$",
+      "action": {
+        "type": "command",
+        "command": "npm run build 2>&1; if ($LASTEXITCODE -ne 0) { exit 1 }"
+      }
+    }
+  ]
+}

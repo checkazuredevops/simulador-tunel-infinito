@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "PBT on save",
+      "trigger": "PostFileSave",
+      "matcher": "src/game/logic\\\\.js$|src/game/constants\\\\.js$",
+      "action": {
+        "type": "command",
+        "command": "npx vitest run tests/position.property.test.js tests/scoring.property.test.js tests/recycling.property.test.js tests/collision.property.test.js 2>&1; if ($LASTEXITCODE -ne 0) { exit 1 }"
+      }
+    }
+  ]
+}
